@@ -1,0 +1,13 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'CSS/icons-font';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+

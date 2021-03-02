@@ -1,0 +1,37 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'libs/icons_font';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: $main-color;    
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+}
+b {
+    color: #000;
+}
+
+
+.container {
+    width: 1154px;
+    margin: 0 auto;
+}
+
+@import 'blocks/btn';
+@import 'blocks/modal';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/choice-summer';
+@import 'blocks/species';

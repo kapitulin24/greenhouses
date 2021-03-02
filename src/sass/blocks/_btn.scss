@@ -1,0 +1,17 @@
+.btn {
+    background: linear-gradient(180deg, #B4D531 0%, rgba(156, 194, 22, 0) 100%), #9CC216;
+    box-shadow: 0px 0px 10px #9CC216;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &_clear {
+        background: none;
+        box-shadow: none;
+        border: 1px solid #9CC216;
+        filter: drop-shadow(0px 0px 10px #9CC216);
+        color: #000;
+    }
+}

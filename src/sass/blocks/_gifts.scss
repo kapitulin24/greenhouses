@@ -55,6 +55,10 @@
         &-current {
             position: relative;
             margin-top: 73px;
+            img {
+                width: 74px;
+                height: 74px;
+            }
             &:after {
                 content: '';
                 position: absolute;

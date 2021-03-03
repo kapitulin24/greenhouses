@@ -1,0 +1,103 @@
+.gifts {
+    min-height: 1011px;
+    background-color: #F4F7F8;
+    padding: 82px 0 94px 0;
+    text-align: center;
+    &__discounts-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 63px;
+        list-style-type: none;
+    }
+    &__discount {
+        &-elem {
+            position: relative;
+            width: 328px;
+            min-height: 330px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            margin-left: 36px;
+            padding: 30px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &-preview {
+            font-family: 'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 100px;
+            line-height: 133px;
+            color: #FF9B10;
+            height: 128px;
+            img {
+                height: 100%;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                transform: translateX(-12px);
+            }
+        }
+        &-title {
+            margin-top: 23px;
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+        }
+        &-descr {
+            margin-top: 11px;
+        }
+
+    }
+    &__promotion {
+        &-current {
+            position: relative;
+            margin-top: 73px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 296px;
+                height: 1px;
+                top: 50%;
+                right: calc(50% + 116px);
+                background-color: #9CC216;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 296px;
+                height: 1px;
+                top: 50%;
+                left: calc(50% + 116px);
+                background-color: #9CC216;
+            }
+        }
+        &-title {
+            margin-top: 13px;
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            color: #9CC216;
+        }
+        &-descr {
+            margin-top: 23px;
+            font-family: 'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: #000000;
+        }
+        &-ps {
+            margin-top: 12px;
+        }
+    }
+    &__btn {
+        margin-top: 28px;
+        width: 243px;
+        height: 43px;
+    }
+}

@@ -1,0 +1,101 @@
+.order {
+    text-align: center;
+    padding: 73px 0 108px 0;
+    min-height: 1325px;
+    position: relative;
+    &__pic {
+        position: absolute;
+        bottom: -130px;
+        left: 38px;
+    }
+    &__list {
+        margin-top: 102px;
+        list-style-type: none;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 254px;
+        div div img {
+            width: 100%;
+            height: 100%;
+        }
+        &-number {
+            position: absolute;
+        }
+        &-left {
+            width: 390px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 100%;
+                background: #FF9B10;
+            }
+        }
+        &-right {
+            margin-left: 149px;
+            width: 390px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #FF9B10;
+                left: 50%;
+                top: 0;
+            }
+        }
+        &-title {
+            margin-top: 25%;
+            font-family: 'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+        }
+        &-subtitle {
+            margin-top: 12px;
+        }
+        &-number {
+            left: 346px;
+            bottom: -99px;
+            font-family: 'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 200px;
+            line-height: 267px;
+            color: #9CC216;
+            opacity: 0.5;
+        }
+        &:nth-child(2n) {
+            .order__item-number {
+                left: 620px;
+            }
+        }
+        &:last-child {
+            .order__item-right {
+                &:after {
+                    height: calc(100% + 128px);
+                }
+            }
+        }
+        &-img {
+            border-radius: 5px;
+        }
+    }
+    &__btn {
+        margin-top: 128px;
+        width: 263px;
+        height: 43px;
+        border: 1px solid #FF9B10;
+        filter: drop-shadow(0px 0px 10px #FF9B10);
+    }
+    &__descr {
+        margin-top: 19px;
+    }
+}

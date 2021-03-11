@@ -1,0 +1,51 @@
+.documentation {
+    min-height: 665px;
+    padding: 70px 0 115px 0;
+    text-align: center;
+    &__subtitle {
+        margin-top: 14px;
+    }
+    &__sliders {
+        position: relative;
+        margin-top: 47px;
+        width: 1102px;
+        .slick-list {
+            padding: 10px;
+        }
+        .slick-track {
+            height: 330px;
+        }
+        .slick-slide {
+            width: 248px;
+            height: 330px;      
+            margin: 0 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .slick {
+            &-arrow {
+            position: absolute;
+            border: none;
+            background: none;
+            width: 22px;
+            height: 36px;
+            }
+            &-prev {
+                top: 50%;
+                transform: translateY(-50%);
+                left: -48px;
+                outline: none;
+                }
+            &-next {
+                top: 50%;
+                transform: translateY(-50%);
+                right: -48px;
+                outline: none;
+            }
+        }    
+    }
+}

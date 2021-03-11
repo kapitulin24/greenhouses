@@ -21,9 +21,6 @@
             width: 100%;
             height: 100%;
         }
-        &-number {
-            position: absolute;
-        }
         &-left {
             width: 390px;
             &:after {
@@ -63,6 +60,7 @@
             margin-top: 12px;
         }
         &-number {
+            position: absolute;
             left: 346px;
             bottom: -99px;
             font-family: 'Playfair Display', sans-serif;

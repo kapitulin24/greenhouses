@@ -26,6 +26,57 @@
                 border-radius: 5px;
             }
         }
+        .slick {
+            &-arrow {
+            position: absolute;
+            border: none;
+            background: none;
+            width: 22px;
+            height: 36px;
+            }
+            &-prev {
+                top: 50%;
+                transform: translateY(-50%);
+                left: -63px;
+                &-descr {
+                    text-align: right;
+                    width: 176px;
+                    top: 58%;
+                    left: -215px;
+                    font-weight: bold;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            &-next {
+                top: 50%;
+                transform: translateY(-50%);
+                right: -63px;
+                &-descr {
+                    text-align: left;
+                    width: 176px;
+                    top: 58%;
+                    right: -215px;
+                    font-weight: bold;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
     &__video {
         &-play {
@@ -78,57 +129,6 @@ div.feedback__video-wrapper {
     top: calc(50% + 20px);
     left: 50%;
     transform: translate(-50%, -50%);
-}
-.slick {
-    &-arrow {
-    position: absolute;
-    border: none;
-    background: none;
-    width: 22px;
-    height: 36px;
-    }
-    &-prev {
-        top: 50%;
-        transform: translateY(-50%);
-        left: -63px;
-        &-descr {
-            text-align: right;
-            width: 176px;
-            top: 58%;
-            left: -215px;
-            font-weight: bold;
-            line-height: 17px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        &:focus {
-            outline: none;
-        }
-    }
-    &-next {
-        top: 50%;
-        transform: translateY(-50%);
-        right: -63px;
-        &-descr {
-            text-align: left;
-            width: 176px;
-            top: 58%;
-            right: -215px;
-            font-weight: bold;
-            line-height: 17px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        &:focus {
-            outline: none;
-        }
-    }
 }
 ul.slick-dots {
     margin-top: 47px;

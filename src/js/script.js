@@ -16,5 +16,13 @@ $(document).ready(function(){
               countFeedback = document.querySelectorAll('[role="tabpanel"]');
 
         changeCount.textContent = `Отзыв ${currentSlide + 1} из ${countFeedback.length}`;
-      });
+    });
+    $('.documentation__sliders').slick({
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrow_left-g.svg" alt=""></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrow_right-g.svg" alt=""></button>',
+        slidesToShow: 4,
+        draggable: false,
+        infinite: false,
+        variableWidth: true
+	});
 });

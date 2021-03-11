@@ -1,0 +1,41 @@
+.guest {
+    min-height: 552px;
+    padding: 85px 0 71px 0;
+    background-color: white;
+    text-align: center;
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 14px;
+        max-width: 790px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__item {
+        position: relative;
+        width: 250px;
+        text-align: left;
+        &-icon {
+            position: absolute;
+            height: 48px;
+            width: 48px;
+            left: 0;
+            top: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-descr {
+            margin-top: 75px;
+            span {
+                display: block;
+                font-weight: bold;
+                color: #000;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

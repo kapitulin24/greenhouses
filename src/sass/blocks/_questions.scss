@@ -1,0 +1,88 @@
+@keyframes spoiler-open {
+    0%   {max-height: 60px;}
+    100% {max-height: 300px;}
+  }
+.questions {
+    min-height: 908px;
+    background: #F4F7F8;
+    padding: 54px 0 76px 0;
+    &__list {
+        padding-top: 39px;
+        list-style-type: none;
+        counter-reset: list;
+        li {            
+            margin-top: 15px;
+            position: relative;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:before {
+                counter-increment: list;
+                content: '0' counter(list) '.';
+                position: absolute;
+                left: 21px;
+                font-family: 'Playfair Display', sans-serif;
+                font-style: italic;
+                font-size: 36px;
+                line-height: 48px;
+                color: #9CC216;
+
+            }
+            &:nth-child(n+10) {
+                content: counter(list) '.';
+            }
+            [open] {
+                animation: spoiler-open 1.2s;
+                &:after {
+                    transform: rotateX(180deg);
+                    transition: all 1s;
+                    bottom: 16px;
+                }
+            }
+        }
+    }
+    &__spoiler {
+        padding: 14px 62px 19px 88px;
+        border: 1px solid #9CC216;
+        filter: drop-shadow(0px 0px 10px #9CC216);
+        border-radius: 5px;
+        overflow: hidden;
+        &:after {
+            content: url('../icons/arrows/arrow_down.svg');
+            position: absolute;
+            right: 24px;
+            bottom: 14px;
+        }
+        summary {
+            display: block;
+            outline: none;
+            font-family: 'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+    &__new {
+        text-align: center;
+        margin-top: 63px;
+        font-family: 'Playfair Display', sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        line-height: 40px;
+        color: #000000;
+        &-descr {
+            text-align: center;
+            margin-top: 12px;
+        }
+    }
+    &__btn {
+        display: block;
+        padding: 13px 31px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    min-height: 126px;
+    background: #F4F7F8;
+    padding: 24px 0 18px 0;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__policy a {
+        color: $main-color;
+        text-decoration: underline;
+    }
+}

@@ -7,6 +7,12 @@
         position: absolute;
         bottom: -130px;
         left: 38px;
+        max-width: 360px;
+        max-height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     &__list {
         margin-top: 102px;
@@ -83,6 +89,9 @@
         }
         &-subtitle {
             margin-top: 12px;
+            a {
+                color: $main-color;
+            }
         }
         &:last-child {
             .order__item-right {
@@ -93,10 +102,13 @@
         }
         &-img {
             filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-            border-radius: 5px;
-            img {                
+            width: 389px;
+            height: 254px;
+            img {      
+                border-radius: 5px;          
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }

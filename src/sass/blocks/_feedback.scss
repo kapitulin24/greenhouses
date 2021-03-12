@@ -15,15 +15,15 @@
         position: relative;
         margin: 0 auto;
         margin-top: 42px;
-        width: 848px;
-        height: 486px;
         &-item {
             position: relative;
             outline: none;
-            border-radius: 5px;
+            height: 486px;
             video {
                 height: 100%;
+                width: 848px;
                 border-radius: 5px;
+                object-fit: cover;
             }
         }
         .slick {

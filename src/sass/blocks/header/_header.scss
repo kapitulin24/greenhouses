@@ -1,5 +1,7 @@
 .header__wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 121px;
     padding-top: 22px;
     background-color: #fff;
@@ -48,6 +50,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        a:hover {
+            text-decoration: none;
+        }
     }
     &__btn {
         margin-left: 15px;
@@ -64,7 +69,7 @@
         height: 43px;
         border: 1px solid #9CC216;
         border-radius: 5px;        
-        a {
+        div {
             font-weight: bold;
             line-height: 17px;
             text-transform: uppercase;

@@ -29,20 +29,28 @@ b {
 }
 
 @import 'blocks/btn';
-@import 'blocks/modal';
-@import 'blocks/title';
-@import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/choice-summer';
-@import 'blocks/species';
-@import 'blocks/choice-greenhouse';
-@import 'blocks/test';
-@import 'blocks/order';
-@import 'blocks/_gifts';
-@import 'blocks/_gather';
-@import 'blocks/feedback';
-@import 'blocks/documentation';
-@import 'blocks/questions';
-@import 'blocks/guest';
-@import 'blocks/map';
-@import 'blocks/footer';
+@import 'blocks/modal/modal';
+@import 'blocks/title/title';
+@import 'blocks/header/header';
+@import 'blocks/promo/promo';
+@import 'blocks/choice-summer/choice-summer';
+@import 'blocks/species/species';
+@import 'blocks/choice-greenhouse/choice-greenhouse';
+@import 'blocks/test/test';
+@import 'blocks/order/order';
+@import 'blocks/gifts/gifts';
+@import 'blocks/gather/gather';
+@import 'blocks/feedback/feedback';
+@import 'blocks/documentation/documentation';
+@import 'blocks/questions/questions';
+@import 'blocks/guest/guest';
+@import 'blocks/map/map';
+@import 'blocks/footer/footer';
+
+//media
+
+@import 'style-media';
+@import 'blocks/header/media-header';
+@import 'blocks/promo/promo-media';
+@import 'blocks/modal/modal-media';
+@import 'blocks/choice-summer/choice-summer-media';

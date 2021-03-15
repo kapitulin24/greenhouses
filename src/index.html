@@ -11,6 +11,11 @@
     <header>
         <div class="container">
             <div class="header__wrapper">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="header-logo">
                     <img class="header-logo__img" src="img/logo.png" alt="logo">
                     <div class="header-logo__dscr">
@@ -21,10 +26,12 @@
                 <div class="header-content">
                     <div class="header-content__contacts">
                         <div class="header-content__dscr">Работаем ежедневно с <span>9.00 до 21.00</span></div>
-                        <div class="header-content__phone">
-                            <img src="icons/contacts/call.svg" alt="call">
-                            <a href="tel:+74952367039">+7 (495) 236-70-39</a>
-                        </div>
+                        <a href="tel:+74952367039">
+                            <div class="header-content__phone">
+                                <img src="icons/contacts/call.svg" alt="call">
+                                <div>+7 (495) 236-70-39</div>
+                            </div>
+                        </a>
                         <button class="header-content__btn btn">Обрантый звонок</button>
                     </div>
                     <nav class="header-content__navigation">
@@ -54,6 +61,7 @@
                 </div>
                 <div class="modal">
                     <div class="modal__name">Скидка 5%</div>
+                    <div class="modal__second-name">Мы сохранили цены 2020 года!</div>
                     <div class="modal__descr"><b>Оставьте заявку</b> и получите <b>скидку 10%</b> при заказе теплицы осенью!</div>
                     <form action="#" class="modal__form">
                         <div class="modal__wrapper">
@@ -67,7 +75,7 @@
                             </div>
                         </div>
                         <button class="modal__btn btn" >отправить</button>
-                        
+                        <button class="modal__get-link btn">получить скидку</button>
                     </form>
                 </div>
             </div>
@@ -97,19 +105,21 @@
                     <div class="choice-summer__item-descr">Выдержит любой дождь, снег, град, сильный ветер.</div>
                 </div>
             </div>
-            <div class="choice-summer__logo">
-                <img src="img/logo.png" alt="logo">
+            <div class="choice-summer__wrapper-text">
+                <div class="choice-summer__logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <h2 class="title choice-summer__title">Выбирайте сами, когда у вас лето</h2>
+                <div class="choice-summer__descr">
+                    Компания Мостеплица производит дачные и промышленные теплицы под ключ. Наши теплицы не падают, их не уносит ветром, они не разрушаются под воздействием солнца, дождя или града. 
+                    <br><br>
+                    Все теплицы мы производим самостоятельно на производственной площадке в Москве, поэтому гарантируем качество и честные цены завода-изготовителя. 
+                </div>
+                <h3 class="choice-summer__pic-descr">С заботой о вашем урожае!</h3>
             </div>
-            <h2 class="title choice-summer__title">Выбирайте сами, когда у вас лето</h2>
-            <div class="choice-summer__descr">
-                Компания Мостеплица производит дачные и промышленные теплицы под ключ. Наши теплицы не падают, их не уносит ветром, они не разрушаются под воздействием солнца, дождя или града. 
-                <br><br>
-                Все теплицы мы производим самостоятельно на производственной площадке в Москве, поэтому гарантируем качество и честные цены завода-изготовителя. 
-            </div>
-            <h3 class="choice-summer__pic-descr">С заботой о вашем урожае!</h3>
             <div class="choice-summer__pic"><img src="img/harvest.png" alt="salad"></div>
         </div>
-    </section>
+    <!-- </section>
     <section class="species">
         <div class="container">
             <h2 class="species__title title">Виды теплиц</h2>
@@ -730,7 +740,7 @@
                 <div class="footer__performer"><a href="#"><img src="icons/promicom.svg" alt="promicom"></a></div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

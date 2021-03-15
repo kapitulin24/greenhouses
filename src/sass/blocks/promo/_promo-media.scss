@@ -1,0 +1,54 @@
+@media (max-width: 991px) {
+    .promo {
+        background-position: 20% 0%;
+    }
+}
+@media (max-width: 767px) {
+    .promo {
+        --min-height: 568px;
+        min-height: var(--min-height);
+        padding: 95px 0 0 0;
+        &__wrapper {
+            min-height: var(--min-height);
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .promo {
+        text-align: center;
+        background-position: 31% 0%;
+        background-size: 435%;
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__header {
+            font-size: 32px;
+            line-height: 43px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 150%;
+        }
+        &__price {
+            justify-content: center;
+        }
+        &__now-price {
+            font-size: 28px;
+            line-height: 51px;
+        }
+        &__old-price {
+            font-size: 16px;
+            line-height: 51px;
+        }
+    }
+}
+@media (max-width: 359px) {
+    .promo {
+        background: url(../img/bg_promo.jpg) center center/cover no-repeat;
+        &__header {
+            font-size: 29px;
+        } 
+    }  
+}

@@ -1,0 +1,44 @@
+@media (max-width: 991px) {
+    .choice-summer {
+        &__wrapper-item {
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin: 20px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .choice-summer {
+        &__wrapper-item {
+            justify-content: center;
+            text-align: center;
+        }
+        &__item {           
+            width: 230px;
+        }
+        &__logo {
+            margin-top: 45px;
+            &:after {
+                width: 150px;
+                right: calc(-15px - 150px);
+            }
+            &:before {
+                width: 150px;
+                left: calc(-15px - 150px);
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .choice-summer {
+        padding: 25px 0 70px 0;
+        &__item {           
+            width: 250px;
+            margin: 25px 0;
+        }
+        &__wrapper-text {
+            display: none;
+        }
+    }
+}

@@ -36,21 +36,27 @@
         &__wrapper-text {
             display: none;
         }
+        &__pic {
+            bottom: -80px;            
+        }
     }
 }
 @media (max-width: 575px) {
     .choice-summer {
         &__pic {
-            bottom: -25px;            
+            bottom: -60px;            
         }
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 359px) {
     .choice-summer {
         padding: 25px 0 70px 0;
         &__item {
             margin: 25px 0;
+        }
+        &__pic {
+            bottom: -40px;            
         }  
     }
 }

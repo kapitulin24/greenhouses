@@ -18,11 +18,16 @@
     &__grid {
         &-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, minmax(134, auto));
-            grid-auto-rows: repeat(minmax(134, auto));
+            grid-template-columns: 1fr;
             margin-top: 73px;
-            gap: 40px 80px;
+            row-gap: 40px;
+            & > div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px 80px;
+                grid-template-rows: repeat(3, minmax(134, auto));
+                grid-auto-rows: repeat(minmax(134, auto));
+            }
         }
         &-item {
             display: grid;

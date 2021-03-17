@@ -6,17 +6,13 @@
     &__subtitle {
         margin-top: 14px;
     }
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
+    &__descr {       
+        padding-right: 15px;
+        width: 430px;        
     }
-    &__descr {        
-        padding-right: 15px;        
-    }
-    &__descr-cart {
+    &__descr-card {
         text-align: left;
-        width: 430px;
+        margin-top: -60px;
         img {
             max-width: 80%;
             object-fit: contain;
@@ -66,15 +62,19 @@
         }
     }
     &__tabs {
-        width: 693px;
+        margin-top: 25px;
         &-name {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            flex-wrap: wrap;
             list-style-type: none;
+            li {
+                margin-left: 18px;
+            }
         }
     }
     &__tab {
-        padding: 0 25px 0 25px;
+        padding: 0 25px;
         height: 43px;
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -96,7 +96,37 @@
             cursor: pointer;
         }
     }
+    &__sale-wrapper {
+        div {
+            position: absolute;
+            color: white;
+            padding: 0 9px 0 9px;
+            border-radius: 5px;                
+            left: -5px;            
+            white-space: nowrap;
+            span {
+                height: 8px;
+                width: 8px;
+                color: white;
+                padding-right: 6px;
+            }
+        }
+    }
     &__card {
+        &-mobile {
+            display: none;
+            &-item {
+                height: 220px;
+            img {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                
+                border-radius: 5px;
+            }
+            }            
+        }
         position: relative;
         &-wrapper {
             position: relative;
@@ -104,7 +134,7 @@
             background: #FFFFFF;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
-            margin: 41px 0 191px 0;
+            margin: 41px 0 0 0;
             padding: 25px;
             display: flex;
             min-height: 267px;
@@ -113,20 +143,7 @@
             width: 180px;
             height: 220px;
             position: relative;
-            div {
-                position: absolute;
-                color: white;
-                padding: 0 9px 0 9px;
-                border-radius: 5px;                
-                left: -5px;
-                span {
-                    height: 8px;
-                    width: 8px;
-                    color: white;
-                    padding-right: 6px;
-                }
-            }
-            img {
+            & > img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -137,7 +154,7 @@
             background: #E30F0F;
             top: 3px;
             &_active {
-                display: block;
+                display: inline-block;
             }
         } 
         &-choice {
@@ -145,7 +162,7 @@
             background: #FF9B10;
             top: 3px;
             &_active {
-                display: block;
+                display: inline-block;
             }
         } 
         &-hit {
@@ -153,7 +170,7 @@
             background: #9CC216;
             top: 32px;
             &_active {
-                display: block;
+                display: inline-block;
             }
         } 
         &-price {
@@ -161,7 +178,7 @@
             background: #E30F0F;
             top: 62px;
             &_active {
-                display: block;
+                display: inline-block;
             }
         }
         &-content {
@@ -216,22 +233,27 @@
             height: 43px;
         }
         &-preview {
-            position: absolute;
-            bottom: -149px;
-            left: 8px;
-            z-index: 1;
-            img {
-                width: 223px;
-                height: 156px;
-                border-radius: 5px;
-                object-fit: cover;                
-            }
+            margin-top: -5px;
+            div{
+                outline: none;
+                img {                    
+                    margin: 0 4px;
+                    width: 223px;                    
+                    height: 100%;
+                    border-radius: 5px;
+                    object-fit: cover;                
+                }
+            } 
         }
+    }
+    &__wrapper {
+        width: 693px;
     }
     &__content {
         display: none;
         &_active {
-            display: block;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

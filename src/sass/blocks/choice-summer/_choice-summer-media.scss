@@ -19,9 +19,6 @@
                 left: calc(-15px - 150px);
             }
         }
-        &__pic {
-            bottom: -90px;            
-        }
     }
 }
 @media (max-width: 767px) {
@@ -36,16 +33,6 @@
         &__wrapper-text {
             display: none;
         }
-        &__pic {
-            bottom: -80px;            
-        }
-    }
-}
-@media (max-width: 575px) {
-    .choice-summer {
-        &__pic {
-            bottom: -60px;            
-        }
     }
 }
 
@@ -55,8 +42,5 @@
         &__item {
             margin: 25px 0;
         }
-        &__pic {
-            bottom: -40px;            
-        }  
     }
 }

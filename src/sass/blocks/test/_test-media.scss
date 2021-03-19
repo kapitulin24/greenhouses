@@ -1,3 +1,13 @@
+@media (max-width: 1200px) {
+    .test {
+        &__pic {
+            height: 150px;
+            right: 50%;
+            max-width: 80px;
+            transform: rotate(90deg) translate(100%, -25%) scale(2);
+        }
+    }
+}
 @media (max-width: 991px) {
     .test {
         padding-bottom: 100px;
@@ -39,10 +49,6 @@
                 }
             }
         }
-        &__pic {
-            right: 50%;
-            transform: rotate(90deg) translate(50%, -50%) scale(2);
-        }
     }
 }
 @media (max-width: 575px) {
@@ -67,6 +73,11 @@
                     height: 19px;
                 }
             }
+        }
+        &__pic {
+            max-width: 78px;
+            height: 90px;
+            transform: rotate(90deg) translate(50%, -50%) scale(2);
         }
     }
 }

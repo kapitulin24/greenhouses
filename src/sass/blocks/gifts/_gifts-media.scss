@@ -1,0 +1,96 @@
+@media (max-width: 991px) {
+    .gifts {
+        min-height: 200px;
+        padding-bottom: 81px;
+        &__discount {
+            &-elem {
+                padding: 7px;
+                margin-left: 24px;
+            }
+            &-preview {
+                font-size: 80px;
+                line-height: 100px;
+                height: 100px;
+            }
+            &-descr {
+                font-size: 12px;
+            }
+            &-title {
+                font-size: 19px;
+            }
+        }    
+    }
+}
+@media (max-width: 767px) {
+    .gifts {
+        &__title {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &__discounts-wrapper {            
+            flex-direction: column;
+            margin-top: 24px;
+        }
+        &__discount {
+            &-elem {
+                width: 100%;
+                margin: 25px 0 0 0;
+                padding: 30px 53px 53px 53px;
+            }
+            &-preview {
+                font-size: 100px;
+                line-height: 133px;
+                height: 128px;
+            }
+            &-descr {
+                font-size: 14px;
+            }
+            &-title {
+                font-size: 20px;                
+                margin-top: 23px;
+            }
+        }
+        &__promotion {
+            &-current {
+                &:after {
+                    right: calc(50% + 76px);
+                }
+                &:before {
+                    left: calc(50% + 76px);
+                }
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 31px;
+            }
+        }    
+    }
+}
+@media (max-width: 359px) {
+    .gifts {
+        padding-bottom: 50px;
+        &__discount {
+            &-elem {
+                padding: 25px;
+            }
+        }
+        &__promotion {
+            &-current {
+                &:after {
+                    right: calc(50% + 56px);
+                }
+                &:before {
+                    left: calc(50% + 56px);
+                }
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &-ps {
+                font-size: 12px;
+            }
+        } 
+    }
+}

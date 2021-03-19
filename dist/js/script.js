@@ -35,9 +35,17 @@ $(document).ready(function(){
 
     //start section feedback slick slider
     $('.feedback__sliders').slick({
-		prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrow_left.svg" alt=""></button> <div class="slick-prev-descr">Смотреть<br> предыдущий отзыв</div>',
-		nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrow_right.svg" alt=""></button> <div class="slick-next-descr">Смотреть<br> следующий отзыв</div>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrow_left.svg" alt=""></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrow_right.svg" alt=""></button>',
         dots: true,
+        responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                arrows: false
+              }
+            }
+        ]
 	});
 
     //start подсчет отзыв № из
@@ -68,15 +76,15 @@ $(document).ready(function(){
           hamburger = document.querySelector('.header__hamburger');
 
         hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open');
-        menu.classList.toggle('header-content__navigation_active');
-    });
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('header-content__navigation_active');
+        });
     //start клик по пункту меню закрывает меню
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('open');
             menu.classList.toggle('header-content__navigation_active');
-        })
+        });
     });
     //end клик по пункту меню закрывает меню
     //end всплывающее меню

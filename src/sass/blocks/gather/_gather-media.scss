@@ -1,0 +1,36 @@
+@media (max-width: 991px) {
+    .gather {
+        &__wrapper {
+            overflow-x: auto;
+            grid-template-columns: repeat(5, 224px);
+            grid-auto-rows: repeat(5, 224px);
+        }
+    }
+}
+@media (max-width: 767px) {
+    .gather {
+        &__title {
+            font-size: 28px;
+            line-height: 1.3;
+        }
+        &__wrapper {
+            overflow-x: auto;
+            grid-template-columns: repeat(5, 185px);
+            grid-auto-rows: repeat(5, 180px);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .gather {
+        &__title {
+            font-size: 20px;
+            line-height: 1.3;
+        }
+        &__wrapper {
+            margin-top: 24px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+    }
+}

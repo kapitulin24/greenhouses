@@ -6,6 +6,19 @@
         &__arrow-next-descr {
             display: none;
         }
+        &__sliders {
+            .slick {
+                &-arrow {
+                width: 15%;
+                }
+                &-prev {
+                    left: -15%;
+                }
+                &-next {
+                    right: -15%;
+                }
+            }
+        }
     }
 }
 @media (max-width: 991px) {
@@ -55,8 +68,7 @@
             width: 100%;
             .slick {
                 &-arrow {
-                    width: 0;
-                    height: 0;
+                    display: none!important;
                 }
             }
         }

@@ -1,0 +1,12 @@
+@media (max-width: 939px) {
+    .footer {
+        &__wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            & > div {
+                width: 100%;
+            }
+        }
+    }
+}

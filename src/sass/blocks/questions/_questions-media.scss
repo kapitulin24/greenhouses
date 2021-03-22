@@ -1,0 +1,39 @@
+@media (max-width: 575px) {
+    .questions {
+        min-height: 200px;
+        padding: 54px 0 57px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__list {
+            li {
+                &:before {
+                    font-size: 20px;
+                    line-height: 27px;                    
+                    left: 15px;
+                    top: 10px;
+                }
+                &:nth-child(n+5) {
+                    display: none;
+                }
+            }
+        }
+        &__spoiler {
+            padding: 15px 55px 15px 50px;
+            &:after {
+                right: 15px;
+                bottom: 14px;
+            }
+            summary {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        &__new {
+            margin-top: 50px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

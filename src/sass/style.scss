@@ -1,7 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/slick';
 @import 'base/variables';
-@import 'base/mixins';
 @import 'libs/icons_font';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
@@ -30,7 +29,7 @@ b {
 
 @import 'blocks/btn';
 @import 'blocks/modal/modal';
-@import 'blocks/title/title';
+@import 'blocks/title';
 @import 'blocks/header/header';
 @import 'blocks/promo/promo';
 @import 'blocks/choice-summer/choice-summer';
@@ -44,7 +43,7 @@ b {
 @import 'blocks/documentation/documentation';
 @import 'blocks/questions/questions';
 @import 'blocks/guest/guest';
-@import 'blocks/map/map';
+@import 'blocks/map';
 @import 'blocks/footer/footer';
 
 //media
@@ -61,3 +60,7 @@ b {
 @import 'blocks/gifts/gifts-media';
 @import 'blocks/gather/gather-media';
 @import 'blocks/feedback/feedback-media';
+@import 'blocks/documentation/documentation-media';
+@import 'blocks/questions/questions-media';
+@import 'blocks/guest/guest-media';
+@import 'blocks/footer/footer-media';

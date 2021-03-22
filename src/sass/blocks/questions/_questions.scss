@@ -20,11 +20,11 @@
                 counter-increment: list;
                 content: '0' counter(list) '.';
                 position: absolute;
-                left: 21px;
                 font-family: 'Playfair Display', sans-serif;
                 font-style: italic;
                 font-size: 36px;
                 line-height: 48px;
+                left: 21px;
                 color: #9CC216;
 
             }
@@ -49,9 +49,11 @@
         overflow: hidden;
         &:after {
             content: url('../icons/arrows/arrow_down.svg');
+            height: 20px;
             position: absolute;
             right: 24px;
-            bottom: 14px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         summary {
             display: block;

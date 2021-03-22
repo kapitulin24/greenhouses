@@ -1,0 +1,115 @@
+@media (max-width: 1230px) {
+    .documentation {
+        &__sliders {
+            width: 854px;
+        }
+        &__sliders {
+            .slick {
+                &-prev {
+                    left: -7%;
+                    }
+                &-next {
+                    right: -7%;
+                }
+            }    
+        }
+    }
+} 
+@media (max-width: 991px) {
+    .documentation {
+        min-height: 200px;
+        padding-bottom: 80px;
+        &__sliders {
+            width: 606px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .documentation {
+        &__sliders {
+            width: 308px;
+            .slick {
+                &-arrow {
+                    width: 40%;
+                }
+                &-prev {
+                    left: -40%;
+                    }
+                &-next {
+                    right: -40%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .documentation {
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__sliders {
+            margin-top: 30px;
+            .slick {
+                &-arrow {
+                    width: 30%;
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 100%;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                        img {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+                &-prev {
+                    left: -25%;
+                    }
+                &-next {
+                    right: -25%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .documentation {
+        &__sliders {
+            width: 245px;
+            .slick-slide {
+                height: 248px;
+            }
+            .slick-track {
+                height: 248px;
+            }
+            .slick {                
+                &-arrow {
+                    width: 20%;
+                }
+                &-prev {
+                    left: -18%;
+                    }
+                &-next {
+                    right: -18%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 359px) {
+    .documentation {
+        &__sliders {
+            .slick {                
+                &-arrow {
+                    display: none!important;
+                }
+            }
+        }
+    }
+}

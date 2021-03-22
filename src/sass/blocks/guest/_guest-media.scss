@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {
+    .guest {
+        &__item {
+            width: 230px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .guest {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 50px;
+        }
+        &__item {
+            width: 250px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .guest {
+        padding: 34px 0 52px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}   

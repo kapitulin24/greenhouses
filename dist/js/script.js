@@ -61,12 +61,38 @@ $(document).ready(function(){
 
     //start section documentation slick slider
     $('.documentation__sliders').slick({
-		prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrow_left-g.svg" alt=""></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrow_right-g.svg" alt=""></button>',
+		prevArrow: '<button type="button" class="slick-prev"><div><img src="icons/arrows/arrow_left-g.svg" alt=""></div></button>',
+		nextArrow: '<button type="button" class="slick-next"><div><img src="icons/arrows/arrow_right-g.svg" alt=""></div></button>',
         slidesToShow: 4,
         draggable: false,
         infinite: false,
-        variableWidth: true
+        responsive: [
+            {
+              breakpoint: 1231,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 359,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+              }
+        ]
 	});
     //end section documentation slick slider
     
